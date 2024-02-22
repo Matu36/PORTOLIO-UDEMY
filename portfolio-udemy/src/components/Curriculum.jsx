@@ -1,5 +1,18 @@
 import React from "react";
 
 export default function Curriculum() {
-  return <div>Curriculum</div>;
+  return (
+    <div className="page">
+      <h1>Currículum</h1>
+      <h2>Experiencia</h2>
+      <ul>
+        <li>Trabajé de desarrollador en ...</li>
+      </ul>
+      <h2>Conocimientos</h2>
+      <h2>Educación</h2>
+      <h2>Proyectos personales</h2>
+      <h2>Reconocimientos y premios</h2>
+      <h2>Otros</h2>
+    </div>
+  );
 }

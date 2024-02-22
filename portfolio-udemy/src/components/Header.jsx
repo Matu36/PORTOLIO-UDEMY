@@ -11,19 +11,44 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/inicio">Inicio </NavLink>
+            <NavLink
+              to="/inicio"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Inicio{" "}
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/portafolio">Portfolio </NavLink>
+            <NavLink
+              to="/portafolio"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Portfolio{" "}
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/servicios">Servicios </NavLink>
+            <NavLink
+              to="/servicios"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Servicios{" "}
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/curriculum">Currículum </NavLink>
+            <NavLink
+              to="/curriculum"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Currículum{" "}
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contacto">Contacto </NavLink>
+            <NavLink
+              to="/contacto"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Contacto{" "}
+            </NavLink>
           </li>
         </ul>
       </nav>
