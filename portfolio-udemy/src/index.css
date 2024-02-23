@@ -92,11 +92,11 @@
 }
 
 .footer {
-  min-height: 150px;
-  line-height: 100px;
+  min-height: 50px;
+  line-height: 7px;
   text-align: center;
   font-size: 14px;
-  margin-top: 35px;
+  margin-top: 80px;
   border-top: 3px solid black;
   padding-top: 45px;
   background: #f5f5f5;
@@ -104,5 +104,78 @@
 }
 
 .content {
-  height: 400px;
+  height: 500px;
+}
+
+
+.home h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.home strong {
+  color: #fa4529;
+}
+
+.home h2{
+color:gray;
+font-weight: lighter;
+}
+
+.home a {
+  background: #fa4529;
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+
+
+
+
+.page .heading,
+.home .heading {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.page .heading {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.home p {
+ color:gray;
+}
+  
+input[type="text"],
+textarea
+ {
+  display: block;
+  padding: 15px;
+  margin-top: 25px;
+  width: 250px;
+}
+
+input[type="submit"], button {
+  background: #fa4529;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 300ms;
+  font-size: 16px;
+  border: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.home a:hover, input[type="submit"]:hover, button:hover {
+  background-color: rgb(111, 222, 111);
 }

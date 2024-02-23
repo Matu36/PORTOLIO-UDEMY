@@ -3,7 +3,7 @@ import React from "react";
 export default function Curriculum() {
   return (
     <div className="page">
-      <h1>Currículum</h1>
+      <h1 className="heading">Currículum</h1>
       <h2>Experiencia</h2>
       <ul>
         <li>Trabajé de desarrollador en ...</li>

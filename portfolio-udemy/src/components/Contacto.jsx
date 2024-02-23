@@ -3,7 +3,7 @@ import React from "react";
 export default function Contacto() {
   return (
     <div className="page">
-      <h1>Contacto</h1>
+      <h1 className="heading">Contacto</h1>
       <form className="contact" action="mailto:matipineda85@live.com.ar">
         <input type="text" placeholder="Nombre" />
         <input type="text" placeholder="Apellidos" />
