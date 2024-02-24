@@ -7,6 +7,7 @@ import Curriculum from "../components/Curriculum";
 import Contacto from "../components/Contacto";
 import Header from "../components/Header";
 import Footer from "../components/Layout/Footer";
+import Proyecto from "../components/Proyecto";
 
 export default function MisRutas() {
   return (
@@ -20,6 +21,15 @@ export default function MisRutas() {
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/proyecto/:id" element={<Proyecto />} />
+          <Route
+            path="*"
+            element={
+              <div className="page">
+                <h1 className="heading">Error 404</h1>{" "}
+              </div>
+            }
+          />
         </Routes>
       </section>
 

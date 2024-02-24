@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <div className="logo">
         <span>JL</span>
-        <h3>Julieta Lanciotti APIMAKER</h3>
+        <h3>Julieta Lanciotti</h3>
       </div>
       <nav>
         <ul>

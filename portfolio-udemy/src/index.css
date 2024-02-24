@@ -1,29 +1,4 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
 .layout {
   /* width: 85%; */
@@ -38,6 +13,7 @@
   list-style: none;
   border-bottom: solid 3px black;
   margin-bottom: 35px;
+ 
 }
 
 .header .logo {
@@ -57,6 +33,7 @@
   flex-basis: 40px;
   margin-left: 10px;
   font-weight: 300;
+  
   text-transform: uppercase;
 }
 
@@ -70,6 +47,7 @@
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .header li {
@@ -93,18 +71,18 @@
 
 .footer {
   min-height: 50px;
-  line-height: 7px;
+  line-height: 45px;
   text-align: center;
   font-size: 14px;
-  margin-top: 80px;
+  margin-top: 50px;
   border-top: 3px solid black;
-  padding-top: 45px;
   background: #f5f5f5;
   color: #444;
 }
 
+
 .content {
-  height: 500px;
+  margin-bottom: auto;
 }
 
 
@@ -124,11 +102,12 @@ color:gray;
 font-weight: lighter;
 }
 
-.home a {
+.home .title a {
   background: #fa4529;
   text-decoration: none;
   color: white;
-  padding: 7px;
+  padding: 5px;
+  padding-top: 3px;
   border-radius: 10px;
   transition: all 300ms;
 }
@@ -176,6 +155,197 @@ input[type="submit"], button {
   cursor: pointer;
 }
 
-.home a:hover, input[type="submit"]:hover, button:hover {
+.home .title a:hover, input[type="submit"]:hover, button:hover {
   background-color: rgb(111, 222, 111);
+}
+
+.mask {
+
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item {
+ flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.work-item .mask{
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0px 5px 15px #ddd;
+  border: 1px solid #ddd;
+}
+
+
+.work-item img {
+  width: 100%;
+  transition: all 500ms;
+}
+
+.work-item .mask:hover {
+  width: 110%;
+  margin-right: 30%;
+}
+
+.work-item span {
+  display: block;
+  margin-top: 35px;
+  color: gray;
+}
+
+.work-item h2 {
+  display: block;
+  margin-top: 5px;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.work-item a {
+ color: black;
+ text-decoration: none;
+ transition: all 300ms;
+}
+
+.work-item a:hover {
+  color: #fa4529;
+  
+ }
+
+ .work-item h3 {
+  display: block;
+  color: gray;
+  margin-top: 0px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+ }
+
+ .page-work .mask {
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #ddd;
+
+ }
+
+ .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .contact input, .contact textarea {
+  width: 40%;
+}
+
+
+ .contact input[type="submit"] {
+  margin-top: 40px; 
+  width: 10%;
+}
+
+
+.curriculum {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.curriculum .heading
+ {
+  font-size: 55px;
+  font-weight: bold;
+  color: black;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.curriculum h2 {
+  margin-top: 10px;
+}
+
+.curriculum p {
+  margin-bottom: 10px;
+}
+
+.curriculum section {
+  margin-top: 20px;
+}
+
+.curriculum ul {
+  list-style-type: none;
+}
+
+.curriculum li {
+  margin-bottom: 10px;
+}
+
+.curriculum strong {
+  color: #007bff;
+}
+
+
+.curriculum li > strong {
+  color: #555;
+}
+
+
+.curriculum ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.curriculum li {
+  flex: 1 0 50%;
+}
+
+
+.curriculum section:last-child {
+  margin-bottom: 0;
+}
+
+.page {
+  text-align: center;
+}
+
+.heading {
+  color: #007bff;
+  
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.service {
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.service h2 {
+  color: #333;
+}
+
+.service p {
+  color: #666;
 }
